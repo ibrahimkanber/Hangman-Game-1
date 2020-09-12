@@ -1,0 +1,16 @@
+
+
+.figure-container{
+    padding: 10px;
+    height:  40vh;
+    width: 95vw;
+    overflow: visible;
+    background-color: rgb(207, 182, 182);
+    stroke:rgb(72, 157, 206);
+    stroke-width: 3px;
+    stroke-linecap: round;
+    fill: transparent;
+   
+    
+}
+   
