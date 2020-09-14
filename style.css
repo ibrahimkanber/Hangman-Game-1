@@ -39,7 +39,7 @@ h1{
 
 .main-container{
     /* border:1px solid red; */
-    width: 30rem;
+    width: 25rem;
     /* background-color: rgb(207, 182, 182); */
     background-color: rgb(207, 191, 191);
     border-radius: 10px;
@@ -117,9 +117,9 @@ h1{
     margin:0 3px;
 }
 
-.partOfFigure{
+/* .partOfFigure{
     display:none;
-}
+} */
 
 .final-message-container{
     background-color:rgba(0, 0, 0, 0.3);
