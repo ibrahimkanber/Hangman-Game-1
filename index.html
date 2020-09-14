@@ -10,46 +10,50 @@
 <body>
 <h1>Man down!!!</h1>
 <p>Lorem ipsum dolor sit amet.</p>  
-<div class="main-container">
-    <svg class="figure-container">
-
-        <!---Rod-->
-        <line x1="0" y1="250" x2="120" y2="250" ></line>
-        <line x1="60" y1="0" x2="60" y2="250" ></line>
-        <line x1="60" y1="0" x2="170" y2="0" ></line>
-        <line x1="170" y1="0" x2="170" y2="30" ></line>
-        <!--Head-->
-        <circle cx="170" cy="50" r="20"></circle>
-        <!--Body-->
-        <line x1="170" y1="70" x2="170" y2="140" ></line>
-        <line x1="170" y1="100" x2="140" y2="80" ></line>
-        <line x1="170" y1="100" x2="200" y2="80" ></line>
-        <line x1="170" y1="140" x2="145" y2="180" ></line>
-        <line x1="170" y1="140" x2="195" y2="180" ></line>
+    <div class="main-container">
+            <svg class="figure-container">
+                <!---Rod-->
+                <line x1="0" y1="250" x2="120" y2="250" ></line>
+                <line x1="60" y1="0" x2="60" y2="250" ></line>
+                <line x1="60" y1="0" x2="170" y2="0" ></line>
+                <line x1="170" y1="0" x2="170" y2="30" ></line>
+                <!--Head-->
+                <circle cx="170" cy="50" r="20" class="partOfFigure head"></circle>
+                <!--Body-->
+                <line x1="170" y1="70" x2="170" y2="140" class="partOfFigure body"></line>
+                <line x1="170" y1="100" x2="140" y2="80" class="partOfFigure leftHand"></line>
+                <line x1="170" y1="100" x2="200" y2="80"class="partOfFigure rightHand" ></line>
+                <line x1="170" y1="140" x2="145" y2="180" class="partOfFigure leftLeg" ></line>
+                <line x1="170" y1="140" x2="195" y2="180" class="partOfFigure RightLeg"  ></line>  
+            </svg>
+            
+            <div class="wrong-letters-container">
+                <div class="wrong-letters">
+                    <h3 class="wrong-header">wrong</h3>
+                    <p id="wrong">x,y</p>
+                </div>
+            </div> 
+            
+            <div class="word">
+                <div class="letters letter1">c</div>
+                <div class="letters letter2">l</div>
+                <div class="letters letter3">a</div>
+                <div class="letters letter4">r</div>
+                <div class="letters letter5">u</div>
+                <div class="letters letter6">s</div>
+            </div>  
+    </div>
+    <div class="final-message-container">
+        <div class="small-container">
+            <p class="message">Man down!!</p>
+            <button class="play-again">Play again</button>
+        </div>
         
-        
-        
-       
-        
-    </svg>
-    
-    
+    </div>
 
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
+    <div class="notifications">
+        <p class="notification">You have already this letter!!!</p>
+    </div>
 
 
     <script src="script.js"></script>
