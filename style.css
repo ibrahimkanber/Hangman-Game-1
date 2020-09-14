@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&display=swap');
+
+:root{
+    --background-color-1:rgb(74, 201, 201);
+}
+
+
 *{
     box-sizing: border-box;
 }
+
+
 
 body{
     /* background-color: cornflowerblue; */
@@ -10,14 +21,28 @@ body{
     align-items: center;
     height:80vh;
     margin:0;
-    border:1px solid  blue;
+    background-color:var(--background-color-1);
+    /* border:1px solid  blue; */
    
 }
 
+h1{
+    font-family: 'Amatic SC', cursive;
+    font-size:3rem;
+ margin-block-end: 0;
+}
+
+.description{
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+
 .main-container{
-    border:1px solid red;
+    /* border:1px solid red; */
     width: 30rem;
-    
+    /* background-color: rgb(207, 182, 182); */
+    background-color: rgb(207, 191, 191);
+    border-radius: 10px;
     position: relative;
     overflow: visible;
 }
@@ -27,7 +52,6 @@ body{
     width: 100%;
     height: 300px;
     overflow:visible;
-    background-color: rgb(207, 182, 182);
     stroke:rgb(72, 157, 206);
     stroke-width: 3px;
     stroke-linecap: round;
@@ -39,10 +63,10 @@ body{
 
 
 .wrong-letters-container{
-    border:2px solid blue;
+    /* border:2px solid blue; */
     position: absolute;
-    top:0;
-    right:0;
+    top:15px;
+    right:20px;
     height: fit-content;
     padding: 0;
    
@@ -51,11 +75,25 @@ body{
 .wrong-header{
     margin-block-start: 0;
     margin-block-end: 0.2rem;
+    text-align: center;
+
+   
+}
+
+.attention{
+    color:rgba(255, 0, 76, 0.836);
+    font-size: larger;
 }
 
 #wrong{
-    text-align: center;
     margin-block-start: 0.5rem;
+    text-align: center;
+    font-size:25px;
+    padding: 5px;
+    border-radius: 5px;
+    border:2px solid red;
+    background-color: white;
+    color:rgb(190, 9, 54);
 
 }
 
@@ -74,7 +112,6 @@ body{
     justify-content: center;
     align-items: center;
     width: 15px;
-    
     border-bottom: 3px solid green;
     font-size:1.5rem;
     margin:0 3px;
@@ -91,8 +128,9 @@ body{
     bottom:0;
     left:0;
     right: 0;
-   display: grid;
-   place-items: center;
+    /* display: grid; */
+    /* place-items: center; */
+    display:none;
     
 
 }
