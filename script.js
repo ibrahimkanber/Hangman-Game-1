@@ -3,11 +3,21 @@ const word=document.querySelector(".word");
 const finalMessage=document.querySelector(".final-message-container");
 const message=document.querySelector(".message")
 const notifications=document.querySelector(".notifications");
+const deneme=document.getElementById("deneme");
 
-const  vocabulary=["clarusway","john","edward","walter","apple","samsung"]
+const  vocabulary=["clarusway","john","edward","walter","Mccarthy","joseph","tom"]
+
+deneme.addEventListener("change",arr1);
+
+const correctAnswer=["r","e"]
+function arr1(){
+   correctAnswer.push(deneme.value);
+   createLetter()
+   deneme.value=""
+}
 
 
-const correctAnswer=["r","e","d","w","a"]
+
 
 function createLetter(){
     let x=vocabulary[2].split("");
