@@ -3,26 +3,26 @@ const word=document.querySelector(".word");
 const finalMessage=document.querySelector(".final-message-container");
 const message=document.querySelector(".message")
 const notifications=document.querySelector(".notifications");
-const deneme=document.getElementById("deneme");
+const wordEntry=document.getElementById("wordEntry");
 
 const  vocabulary=["clarusway","john","edward","walter","Mccarthy","joseph","tom"]
 
-deneme.addEventListener("change",arr1);
+wordEntry.addEventListener("change",arr1);
 
 const correctAnswer=["r","e"]
 function arr1(){
-   correctAnswer.push(deneme.value);
+   correctAnswer.push(wordEntry.value);
    createLetter()
-   deneme.value=""
+   wordEntry.value=""
 }
 
 
 
 
 function createLetter(){
-    let x=vocabulary[2].split("");
+    let index=Math.floor(Math.random()*vocabulary.length);
     let html="";
-    for (let letter of x){
+    for (let letter of vocabulary[index]){
         html+=`<div class='letters'>${correctAnswer.includes(letter)? letter:""}</div>`;  
          
     }
