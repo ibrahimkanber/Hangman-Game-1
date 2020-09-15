@@ -41,6 +41,7 @@ function Hint (){
                 break;
             case "john":
                 alert ("Keep Calm and write code with SCSS/SASS --- King of FullStack")
+                break;
             case "ezran":
                 alert ("King Of JS")
             
