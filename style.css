@@ -4,7 +4,7 @@
 
 :root{
     --background-color-1:#242333;
-    --color:rgb(74, 201, 201)
+    --color:rgb(74, 201, 201);
 }
 
 
@@ -181,5 +181,16 @@ h1{
     width:100px;
     text-align: center;
      
+}
+
+#hint{
+    position: absolute;
+    bottom:10px;
+    right:25%;
+    background-color:white;
+    font-size:14px;
+    padding:3px;
+    color: rgb(192, 25, 13);
+
 }
 

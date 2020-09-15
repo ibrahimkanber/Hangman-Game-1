@@ -5,21 +5,54 @@ const notifications=document.querySelector(".notifications");
 const wordEntry=document.getElementById("wordEntry");
 const wrongLettersElement=document.querySelector(".wrong-letters p");
 const figureParts=document.querySelectorAll(".partOfFigure");
-
+const hint=document.getElementById("hint");
+const playAgain=document.getElementById("play-again");
 
 
 ///Select random word from array
 
-const  vocabulary=["clarusway","john","edward","walter","Mccarthy","joseph","tom"]
+const  vocabulary=["clarusway","john","edward","walter","mccarthy","joseph","tom","ezran"]
 let index=Math.floor(Math.random()*vocabulary.length);
 const selectedWord=vocabulary[index];
+
+///Hint
+
+hint.addEventListener("click",Hint)
+function Hint (){
+       switch(selectedWord){
+
+            case "tom":
+                alert ("Manager/King of leadership")
+                break;
+            case "clarusway":
+                alert ("Reinvent Yourself")
+                break;
+            case "edward":
+                alert ("Instructor/King of React ")
+                break;
+            case "walter":
+                alert ("Instructor/King of GITHUB and WordPress") 
+                break; 
+            case "Mccarthy":
+                alert("Instructor/king of Spiritual Energy and CSS")
+                break;
+            case "joseph":
+                alert ("King of Python-- Selametle!!!")
+                break;
+            case "john":
+                alert ("Keep Calm and write code with SCSS/SASS --- King of FullStack")
+            case "ezran":
+                alert ("King Of JS")
+            
+       } 
+}
 
 ////Get value from input and seperate values
 
 wordEntry.addEventListener("change",seperateLetters);
 
-const correctLetters=[];
-const wrongLetters = [];
+let correctLetters=[];
+let wrongLetters = [];
 function seperateLetters(){
     
     if (selectedWord.includes(wordEntry.value)){
@@ -68,8 +101,7 @@ createLetter()
 
 ////End of Game
 function endOfGame(){
-
-    let correctSet=new Set(correctLetters)
+    let correctSet=new Set(correctLetters);
     if(wrongLetters.length===6 ||correctSet.size===selectedWord.length)
         if (wrongLetters.length===6){
             finalMessage.style.display="grid";
@@ -84,10 +116,21 @@ function endOfGame(){
 }
 
 
-var set3 = new Set([10, 20, 30, 30, 40, 40]);
-console.log(set3.size)
+///play-again
 
+playAgain.addEventListener("click",reset1)
 
+function reset1(){
+    console.log("hello");
+    correctLetters=[];
+    wrongLetters=[];
+    finalMessage.style.display="none";
+    wrongLettersElement.innerHTML="";
+    createLetter();
+    // seperateLetters();
+    
+
+}
 
 
 
