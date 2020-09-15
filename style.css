@@ -149,8 +149,12 @@ h1{
     border-radius: 5px;
     padding: 20px;
     color: floralwhite;
+    display:flex;
+    flex-direction: column;
   
 }
+
+/* .small-container button */
 
 .notifications{
     position:absolute;

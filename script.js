@@ -7,6 +7,7 @@ const wrongLettersElement=document.querySelector(".wrong-letters p");
 const figureParts=document.querySelectorAll(".partOfFigure");
 
 
+
 ///Select random word from array
 
 const  vocabulary=["clarusway","john","edward","walter","Mccarthy","joseph","tom"]
@@ -23,15 +24,20 @@ function seperateLetters(){
     
     if (selectedWord.includes(wordEntry.value)){
         correctLetters.push(wordEntry.value);
+        
     }else{
         wrongLetters.push(wordEntry.value);
-        console.log(wrongLetters);
+        
         showFigurePart();
         wrongLettersElement.innerHTML+= `${wordEntry.value} |`
     }
     createLetter();
-    wordEntry.value=""
+    wordEntry.value="";
+    endOfGame()
+
+    
 }
+
 ////Show  Part of figure if answer is not correct
 function showFigurePart(){
     figureParts.forEach((part,index)=>{
@@ -60,7 +66,26 @@ function createLetter(){
 }
 createLetter()
 
-////
+////End of Game
+function endOfGame(){
+
+    let correctSet=new Set(correctLetters)
+    if(wrongLetters.length===6 ||correctSet.size===selectedWord.length)
+        if (wrongLetters.length===6){
+            finalMessage.style.display="grid";
+            finalMessage.style.backgroundColor=`rgba(179,46,53)`
+            message.innerHTML="Man down"
+        }else if(correctSet.size===selectedWord.length) {
+            finalMessage.style.display="grid";
+            finalMessage.style.backgroundColor="green";
+            message.innerHTML="Congrulations!!!"
+        }
+    
+}
+
+
+var set3 = new Set([10, 20, 30, 30, 40, 40]);
+console.log(set3.size)
 
 
 
@@ -72,22 +97,10 @@ createLetter()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+////Another Option to end 
 
 // let innerWord=word.innerText.replace(/\n/g,"");
-// if (innerWord===vocabulary[2]){
+// if (innerWord===selectedWord{
 //     finalMessage.style.display="grid";
 //     finalMessage.style.backgroundColor="green"
 //     message.innerHTML="Congrulations!!!"
