@@ -34,7 +34,7 @@ function Hint (){
                 alert ("Instructor/King of GITHUB and WordPress") 
                 break; 
             case "Mccarthy":
-                alert("Instructor/king of Spiritual Energy and CSS")
+                alert("Instructor/king of Spirtual Energy and CSS")
                 break;
             case "joseph":
                 alert ("King of Python-- Selametle!!!")
@@ -119,19 +119,19 @@ function endOfGame(){
 
 ///play-again
 
-playAgain.addEventListener("click",reset1)
+// playAgain.addEventListener("click",reset1)
 
-function reset1(){
-    console.log("hello");
-    correctLetters=[];
-    wrongLetters=[];
-    finalMessage.style.display="none";
-    wrongLettersElement.innerHTML="";
-    createLetter();
-    // seperateLetters();
+// function reset1(){
+//     console.log("hello");
+//     correctLetters=[];
+//     wrongLetters=[];
+//     finalMessage.style.display="none";
+//     wrongLettersElement.innerHTML="";
+//     createLetter();
+//     // seperateLetters();
     
 
-}
+// }
 
 
 
