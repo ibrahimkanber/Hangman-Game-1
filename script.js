@@ -103,13 +103,14 @@ createLetter()
 ////End of Game
 function endOfGame(){
     let correctSet=new Set(correctLetters);
-    if(wrongLetters.length===6 ||correctSet.size===selectedWord.length)
+  
     console.log(wrongLetters)
         if (wrongLetters.length===6){
             finalMessage.style.display="grid";
             finalMessage.style.backgroundColor=`rgba(179,46,53)`
             message.innerHTML="Man down"
-        }else if(correctSet.size===selectedWord.length) {
+        }
+        if(correctSet.size===new Set(selectedWord.split("")).size) {
             finalMessage.style.display="grid";
             finalMessage.style.backgroundColor="green";
             message.innerHTML="Congrulations!!!"
