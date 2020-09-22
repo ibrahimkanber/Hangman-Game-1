@@ -104,6 +104,7 @@ createLetter()
 function endOfGame(){
     let correctSet=new Set(correctLetters);
     if(wrongLetters.length===6 ||correctSet.size===selectedWord.length)
+    console.log(wrongLetters)
         if (wrongLetters.length===6){
             finalMessage.style.display="grid";
             finalMessage.style.backgroundColor=`rgba(179,46,53)`
@@ -113,30 +114,29 @@ function endOfGame(){
             finalMessage.style.backgroundColor="green";
             message.innerHTML="Congrulations!!!"
         }
+
+        console.log(wrongLetters)
+        console.log(correctSet)
     
 }
 
 
 ///play-again
 
-// playAgain.addEventListener("click",reset1)
+playAgain.addEventListener("click",reset1)
 
-// function reset1(){
-//     console.log("hello");
-//     correctLetters=[];
-//     wrongLetters=[];
-//     finalMessage.style.display="none";
-//     wrongLettersElement.innerHTML="";
-//     createLetter();
-//     // seperateLetters();
+function reset1(){
+    document.location.reload()
+    // console.log("hello");
+    // correctLetters=[];
+    // wrongLetters=[];
+    // finalMessage.style.display="none";
+    // wrongLettersElement.innerHTML="";
+    // createLetter();
+    // seperateLetters();
     
 
-// }
-
-
-
-
-
+}
 
 
 
