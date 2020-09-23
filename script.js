@@ -56,12 +56,12 @@ let correctLetters=[];
 let wrongLetters = [];
 function seperateLetters(){
     
-    if (selectedWord.includes(wordEntry.value)){
-        correctLetters.push(wordEntry.value);
+    if (selectedWord.includes(wordEntry.value.toLowerCase())){
+        correctLetters.push(wordEntry.value.toLowerCase());
+     
         
     }else{
         wrongLetters.push(wordEntry.value);
-        
         showFigurePart();
         wrongLettersElement.innerHTML+= `${wordEntry.value} |`
     }
