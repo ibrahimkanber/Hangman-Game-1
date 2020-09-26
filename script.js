@@ -9,6 +9,7 @@ const hint=document.getElementById("hint");
 const playAgain=document.getElementById("play-again");
 
 
+
 ///Select random word from array
 
 const  vocabulary=["clarusway","john","edward","walter","mccarthy","joseph","tom","ezran"]
@@ -51,6 +52,13 @@ function Hint (){
 ////Get value from input and seperate values
 
 wordEntry.addEventListener("change",seperateLetters);
+wordEntry.addEventListener("input",myFunction);
+
+function myFunction(e){
+         e.target.value=e.target.value.slice(0,1)
+}
+       
+
 
 let correctLetters=[];
 let wrongLetters = [];
