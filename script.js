@@ -54,8 +54,8 @@ function Hint (){
 wordEntry.addEventListener("change",seperateLetters);
 wordEntry.addEventListener("input",myFunction);
 
-function myFunction(e){
-         e.target.value=e.target.value.slice(0,1)
+function myFunction(event){
+         event.target.value=event.target.value.slice(0,1)
 }
        
 
