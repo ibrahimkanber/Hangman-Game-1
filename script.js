@@ -22,28 +22,28 @@ function Hint (){
        switch(selectedWord){
 
             case "tom":
-                alert ("Manager/King of leadership")
+                alert ("Manager-Motivation")
                 break;
             case "clarusway":
                 alert ("Reinvent Yourself")
                 break;
             case "edward":
-                alert ("Instructor/King of React ")
+                alert ("mentor-react ")
                 break;
             case "walter":
-                alert ("Instructor/King of GITHUB and WordPress") 
+                alert ("LMS Master") 
                 break; 
             case "Mccarthy":
-                alert("Instructor/king of Spirtual Energy and CSS")
+                alert("Instructor CSS-HTML")
                 break;
             case "joseph":
-                alert ("King of Python-- Selametle!!!")
+                alert ("Selametle!!!")
                 break;
             case "john":
-                alert ("Keep Calm and write code with SCSS/SASS --- King of FullStack")
+                alert ("Instructor--SASS-CSS-REACT NATIVE ")
                 break;
             case "ezran":
-                alert ("King Of JS")
+                alert ("Instructor--JS--REACT NATIVE")
             
        } 
 }
